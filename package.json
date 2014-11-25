@@ -1,7 +1,7 @@
 {
   "name": "fs-coalesce",
   "description": "Simple module which will return or read the first file to exist in an array of paths.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/josh/fs-coalesce",
   "author": {
     "name": "Joshua Kennedy",
