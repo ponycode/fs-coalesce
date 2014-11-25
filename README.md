@@ -1,17 +1,23 @@
 # fs-coalesce
 
-Simple module which will return or read the first file to exist in an array of paths.
+Simple module which will return or read the first file to exist in an array of paths. This module will also expand paths like `~/somefile.txt` to `/Users/user/somefile.txt`.
 
 ## Getting Started
-Install the module with: `npm install fs-coalesce`
+Install the module with: `npm install fs-coalesce --save`
 
+Include the module with a regular require.
 ```javascript
-var fs_coalesce = require('fs-coalesce');
-fs_coalesce.awesome(); // "awesome"
+var fsCoalesce = require('fs-coalesce');
 ```
 
 ## Documentation
-_(Coming soon)_
+
+#### firstPathToExist
+Given an array of paths, `firstPathToExist` will return the first path which passes an fs.exist test. The paths are processed in order.
+
+```javascript
+var existingPath = fsCoalesce.firstPathToExist([false, 'bogus', '~/i-exist.text']);
+```
 
 ## Examples
 _(Coming soon)_
