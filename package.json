@@ -41,6 +41,6 @@
     "file"
   ],
   "dependencies": {
-    "underscore": "~1.7.0"
+    "lodash": "^4.17.4"
   }
 }
