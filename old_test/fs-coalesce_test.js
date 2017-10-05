@@ -15,6 +15,7 @@ var temp = require("temp").track();
         _createTempFileWithContent( "{\"test\":\"value2\"}", function( error, path2 ){
           _createTempFileWithContent( "{\"test\":\"value3\"}", function( error, path3 ){
             FILES_THAT_EXIST = [path1, path2, path3];
+			  console.log('ok');
             done();
           });
         });
@@ -23,6 +24,7 @@ var temp = require("temp").track();
 
     tearDown: function( done ){
       temp.cleanup( function(err, stats){
+		  console.log('ko');
         done();
       });
     },

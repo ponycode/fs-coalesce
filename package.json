@@ -1,7 +1,7 @@
 {
   "name": "fs-coalesce",
   "description": "Simple module which will return or read the first file to exist in an array of paths.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/josh/fs-coalesce",
   "author": {
     "name": "Joshua Kennedy",
@@ -25,16 +25,21 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "mocha test"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.2",
+    "assert": "^1.4.1",
+    "expect": "^21.2.1",
+    "mocha": "^4.0.0",
     "temp": "~0.8.1"
   },
-  "keywords": ["coalesce","first to exist","exist","fs","file"],
+  "keywords": [
+    "coalesce",
+    "first to exist",
+    "exist",
+    "fs",
+    "file"
+  ],
   "dependencies": {
     "underscore": "~1.7.0"
   }
